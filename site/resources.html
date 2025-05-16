@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресурсы - Московский Политех</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Локальные стили для точного контроля */
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 8px 0;
+        }
+        
+        .resource-logo {
+            width: auto;
+            height: 40px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+        
+        .resource-text {
+            flex: 1;
+        }
+        
+        .resource-text a {
+            font-weight: 600;
+            color: #0056b3;
+            text-decoration: none;
+            font-size: 1.05rem;
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        .resource-text p {
+            margin: 0;
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 600px) {
+            .resource-logo {
+                height: 36px;
+            }
+            .resource-item {
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Система централизованной отчетности и предикативная модель операционных показателей</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="resources.html" class="active">Ресурсы</a></li>
+                <li><a href="journal.html">Журнал</a></li>
+				<li><a href="people.html">Участники</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="resources">
+            <h2>Полезные ресурсы</h2>
+            
+            <article class="resource-category">
+                <h3>Основные технологии проекта</h3>
+                <ul class="resource-list">
+                    <li>
+                        <div class="resource-item">
+                            <img src="images/python-logo.png" alt="Python" class="resource-logo">
+                            <div class="resource-text">
+                                <a href="https://www.python.org/" target="_blank">Python</a>
+                                <p>Основной язык программирования для анализа данных и машинного обучения</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="resource-item">
+                            <img src="images/postgresql-logo.png" alt="PostgreSQL" class="resource-logo">
+                            <div class="resource-text">
+                                <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>
+                                <p>Реляционная база данных для хранения структурированной информации</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="resource-item">
+                            <img src="images/powerbi-logo.png" alt="Power BI" class="resource-logo">
+                            <div class="resource-text">
+                                <a href="https://powerbi.microsoft.com/" target="_blank">Power BI</a>
+                                <p>Инструмент для визуализации данных и создания дашбордов</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="resource-item">
+                            <img src="images/airflow-logo.png" alt="Apache Airflow" class="resource-logo">
+                            <div class="resource-text">
+                                <a href="https://airflow.apache.org/" target="_blank">Apache Airflow</a>
+                                <p>Платформа для оркестрации ETL-процессов и планирования задач</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            
+
+            
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Московский Политехнический университет</p>
+    </footer>
+</body>
+</html>

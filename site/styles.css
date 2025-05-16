@@ -1,0 +1,292 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 1rem 0 0 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3rem 0;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #003d82;
+}
+
+.btn.secondary {
+    background-color: #6c757d;
+    margin-left: 1rem;
+}
+.logo-square {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+.btn.secondary:hover {
+    background-color: #5a6268;
+}
+
+.actions {
+    margin-top: 2rem;
+}
+
+/* Стили для главной страницы */
+.intro {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.highlight-box {
+    background-color: #e6f2ff;
+    border-left: 4px solid #0056b3;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+}
+
+/* Стили для страницы "О проекте" */
+.project-details article {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-details h3 {
+    color: #0056b3;
+    margin-top: 0;
+}
+
+.project-details ul {
+    padding-left: 1.5rem;
+}
+
+.project-details li {
+    margin-bottom: 0.5rem;
+}
+
+/* Стили для страницы "Ресурсы" */
+.resources {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.resource-category {
+    margin-bottom: 2rem;
+}
+
+.resource-category h3 {
+    color: #0056b3;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.resource-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.resource-list a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.resource-list a:hover {
+    text-decoration: underline;
+}
+
+.resource-list p {
+    margin: 0.5rem 0 0 0;
+    color: #666;
+}
+
+/* Стили для страницы "Журнал" */
+.journal {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.journal-entry {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.journal-entry:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+.entry-header h3 {
+    margin: 0;
+    color: #0056b3;
+}
+
+.entry-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.entry-content ul {
+    padding-left: 1.5rem;
+}
+
+.entry-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+    
+    main {
+        padding: 0 1rem;
+    }
+    
+    .intro, .project-details article, .resources, .journal {
+        padding: 1rem;
+    }
+    
+    .entry-header {
+        flex-direction: column;
+    }
+    
+    .entry-date {
+        margin-top: 0.5rem;
+    }
+    
+    .btn.secondary {
+        margin-left: 0;
+        margin-top: 1rem;
+        display: block;
+    }
+/* Добавляем в конец файла styles.css */
+
+/* Стили для ресурсов с картинками */
+.resource-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.resource-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 5px;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.resource-text {
+    flex: 1;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 480px) {
+    .resource-logo {
+        width: 40px;
+        height: 40px;
+    }
+}

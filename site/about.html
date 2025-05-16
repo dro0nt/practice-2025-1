@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте - Московский Политех</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Обновлённые стили для правильного выравнивания */
+        .project-details article {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .article-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid #0056b3;
+            flex-shrink: 0;
+        }
+        
+        .article-content {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .project-details article {
+                flex-direction: column;
+            }
+            
+            .article-image {
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+                margin: 0 auto 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Система централизованной отчетности и предикативная модель операционных показателей</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">О проекте</a></li>
+                <li><a href="resources.html">Ресурсы</a></li>
+                <li><a href="journal.html">Журнал</a></li>
+                <li><a href="people.html">Участники</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-details">
+            <h2>Описание проекта</h2>
+            
+            <article>
+                <img src="images/problem.png" alt="Проблематика" class="article-image">
+                <div class="article-content">
+                    <h3>Проблематика</h3>
+                    <ul>
+                        <li><strong>Низкая консолидация данных</strong> - информация не стандартизирована, хранится в разных форматах и системах</li>
+                        <li><strong>Отсутствие инструментов предиктивной аналитики</strong> - решения принимаются без систематической оценки рисков</li>
+                        <li><strong>Сложность мониторинга ключевых метрик</strong> - данные поступают в виде разрозненных отчётов</li>
+                        <li><strong>Низкая прозрачность управленческих процессов</strong> - риск коррупционных схем и злоупотреблений</li>
+                    </ul>
+                </div>
+            </article>
+            
+            <article>
+                <img src="images/goals.jpg" alt="Цель проекта" class="article-image">
+                <div class="article-content">
+                    <h3>Цель проекта</h3>
+                    <p>Разработать и внедрить систему централизованной отчётности и предиктивной аналитики, которая позволит:</p>
+                    <ul>
+                        <li>Консолидировать данные из различных источников</li>
+                        <li>Предсказывать ключевые операционные показатели</li>
+                        <li>Контролировать уровень детализации и доступ к отчётам</li>
+                    </ul>
+                </div>
+            </article>
+            
+            <article>
+                <img src="images/relevance.png" alt="Актуальность" class="article-image">
+                <div class="article-content">
+                    <h3>Актуальность</h3>
+                    <p>Современные образовательные учреждения сталкиваются с необходимостью принимать решения на основе качественных, консолидированных данных. Создание системы централизованной отчётности и внедрение предиктивной модели — ключевое условие повышения управленческой эффективности и конкурентоспособности вуза.</p>
+                </div>
+            </article>
+            
+            <article>
+                <img src="images/tasks.png" alt="Ключевые задачи" class="article-image">
+                <div class="article-content">
+                    <h3>Ключевые задачи</h3>
+                    <ul>
+                        <li>Разработка архитектуры и методологии сбора данных</li>
+                        <li>Внедрение системы BI и дашбордов</li>
+                        <li>Разработка и интеграция предиктивных моделей</li>
+                        <li>Обеспечение безопасности и конфиденциальности</li>
+                        <li>Обучение персонала и регламентирование</li>
+                    </ul>
+                </div>
+            </article>
+            
+            <article>
+                <img src="images/result.png" alt="Ожидаемые результаты" class="article-image">
+                <div class="article-content">
+                    <h3>Ожидаемые результаты</h3>
+                    <ul>
+                        <li>Централизованная BI-платформа с единым хранилищем данных</li>
+                        <li>ML-модели для прогнозирования ключевых показателей</li>
+                        <li>Гибкая система разграничения доступа к данным</li>
+                        <li>Повышение управленческой эффективности</li>
+                        <li>Формирование data-driven культуры в университете</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Московский Политехнический университет</p>
+    </footer>
+</body>
+</html>
