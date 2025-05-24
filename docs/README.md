@@ -43,4 +43,5 @@ Neural Network
 ## Документы для вариативного задания
 
 "Создание простой нейросети на Python: Техническое руководство для новичков": [technical_guide.md](technical_guide.md)
+
 "Описание технологии нейросети": [description_tech.md](description_tech.md)
