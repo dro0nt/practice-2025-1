@@ -6,104 +6,58 @@
     <title>Участники проекта - Московский Политех</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Дополнительные стили для страницы участников */
         .people {
             background: white;
             padding: 2rem;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        
+
         .people h2 {
             color: #0056b3;
-            margin-top: 0;
             text-align: center;
             font-size: 2rem;
             margin-bottom: 2rem;
         }
-        
-        .people-list {
-            list-style: none;
-            padding: 0;
+
+        .people-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
         }
-        
-        .people-list li {
-            display: flex;
-            gap: 2rem;
-            padding: 1.5rem;
+
+        .person-card {
             background: #f9f9f9;
+            padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #0056b3;
         }
-        
-        .people-list li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .member-photo {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 3px solid #0056b3;
-        }
-        
-        .people-list div {
-            flex: 1;
-        }
-        
-        .people-list h3 {
+
+        .person-card h4 {
             margin-top: 0;
             color: #0056b3;
+            font-size: 1.2rem;
         }
-        
-        .people-list p {
+
+        .person-card p {
             margin: 0.5rem 0;
         }
-        
-        .people-list a {
-            color: #0056b3;
-            text-decoration: none;
+
+        .person-role {
+            font-weight: bold;
+            color: #333;
         }
-        
-        .people-list a:hover {
-            text-decoration: underline;
-        }
-        
-        .people-list button {
-            background: #0056b3;
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 0.5rem;
-            transition: background 0.3s;
-        }
-        
-        .people-list button:hover {
-            background: #003d82;
-        }
-        
-        .people-list button a {
-            color: white;
-        }
-        
-        @media (max-width: 768px) {
-            .people-list li {
-                flex-direction: column;
-                gap: 1rem;
+
+        @media (max-width: 992px) {
+            .people-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
-            
-            .member-photo {
-                width: 100%;
-                height: auto;
-                max-height: 300px;
+        }
+
+        @media (max-width: 600px) {
+            .people-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -125,31 +79,103 @@
     <main>
         <section class="people">
             <h2>Участники проекта</h2>
-            <ul class="people-list">
-                <li>
-                    <img src="images/Anton.png" alt="Антон Меркулов" class="member-photo">
-                    <div>
-                        <h3>Меркулов Антон Сергеевич (группа 241-336)</h3>
-                        <p><strong>Роль:</strong> Работа с данными</p>
-                        <p><strong>Вклад в проект: </strong>Антон предложил модель искусственного интеллекта, которая показывает хорошие результаты на тестовых данных. Также помогал с составлением пробных баз данных.</p>
-                        <p><strong>Telegram: <a href="https://t.me/sovinis">@sovinis</a></strong></p>
-                        <p><strong>GitHub: <a href="https://github.com/dro0nt">dro0nt</a></strong></p>
-                        <p><strong>Email: AntoM2006@yandex.ru</strong></p>
-                    </div>
-                </li>
+            <div class="people-grid">
+                <div class="person-card">
+                    <h4>Долбышев Даниил Максимович</h4>
+                    <p class="person-role">Роль: Работа с данными</p>
+                    <p>Вклад: Занимался составлением пробных баз данных для команды Фулстек-разработки, включая проектирование структуры таблиц и наполнение их тестовыми данными.</p>
+                </div>
 
-                <li>
-                    <img src="images/Danya.png" alt="Долбышев Даниил" class="member-photo">
-                    <div>
-                        <h3>Долбышев Даниил Максимович (группа 241-336)</h3>
-                        <p><strong>Роль:</strong> Работа с данными</p>
-                        <p><strong>Вклад в проект: </strong>Занимался составлением пробных баз данных для команды Фулстек-разработки, включая проектирование структуры таблиц и наполнение их тестовыми данными.</p>
-                        <p><strong>Telegram: <a href="https://t.me/DaniilDolbsh">@DaniilDolbsh</a></strong></p>
-                        <p><strong>GitHub: <a href="https://github.com/danilstudents">danilstudents</a></strong></p>
-                        <p><strong>Email: daniil.dolb@yandex.ru</strong></p>
-                    </div>
-                </li>
-            </ul>
+                <div class="person-card">
+                    <h4>Меркулов Антон Сергеевич</h4>
+                    <p class="person-role">Роль: Работа с данными</p>
+                    <p>Вклад: Антон предложил модель искусственного интеллекта, которая показывает хорошие результаты на тестовых данных. Также помогал с составлением пробных баз данных.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Мочалин Глеб Александрович</h4>
+                    <p class="person-role">Роль: Работа с данными</p>
+                    <p>Вклад: Изучал PostgreSQL и создавал тестовые таблицы для дашбордов.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Ионин Михаил Павлович</h4>
+                    <p class="person-role">Роль: Работа с данными</p>
+                    <p>Вклад: Изучал PostgreSQL, участвовал в настройке и тестировании СУБД.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Данилов Всеволод Витальевич</h4>
+                    <p class="person-role">Роль: Работа с данными</p>
+                    <p>Вклад: Изучал структуру баз данных, создавал Excel-таблицы, участвовал в установке системы на сервер.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Исаева Наталия Алексеевна</h4>
+                    <p class="person-role">Роль: Работа с данными</p>
+                    <p>Вклад: Анализировала финансовые показатели, рассчитывала экономическую эффективность внедряемой системы.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Шатерникова Дарья Алексеевна</h4>
+                    <p class="person-role">Роль: Дизайн</p>
+                    <p>Вклад: Разработала дизайн светлой и темной темы, интерфейсные компоненты, подготовила презентационные материалы.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Опарин Захар Игоревич</h4>
+                    <p class="person-role">Роль: Дизайн</p>
+                    <p>Вклад: Создал дизайн главной страницы, проработал интерфейс кнопок и макеты дополнительных страниц.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Праздников Артём Алексеевич</h4>
+                    <p class="person-role">Роль: Разработка</p>
+                    <p>Вклад: Верстал страницы сайта и интегрировал дашборды в систему.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Герасимов Григорий Иванович</h4>
+                    <p class="person-role">Роль: Разработка</p>
+                    <p>Вклад: Реализовал страницу "Дашборды", участвовал в создании интерфейса и новых страниц.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Коцевич Александр Сергеевич</h4>
+                    <p class="person-role">Роль: Разработка</p>
+                    <p>Вклад: Разработал техническое задание, занимался версткой и пользовательским интерфейсом страницы "Дашборды".</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Зиновьев Сергей Владимирович</h4>
+                    <p class="person-role">Роль: Разработка</p>
+                    <p>Вклад: Участвовал в верстке страницы "Дашборды", создал первый дашборд и интерфейс.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Краснов Родион Денисович</h4>
+                    <p class="person-role">Роль: Разработка</p>
+                    <p>Вклад: Выполнил начальную верстку сайта, разработал дашборды и пользовательский интерфейс.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Андреев Андрей</h4>
+                    <p class="person-role">Роль: Разработка</p>
+                    <p>Вклад: Координировал команду, организовывал рабочий процесс и занимался логикой взаимодействия между компонентами сайта.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Беберин Всеволод Викторович</h4>
+                    <p class="person-role">Роль: Разработка</p>
+                    <p>Вклад: Разрабатывал архитектуру системы, участвовал в создании компонентов и тестировании.</p>
+                </div>
+
+                <div class="person-card">
+                    <h4>Киличников Александр Евгеньевич</h4>
+                    <p class="person-role">Роль: Разработка</p>
+                    <p>Вклад: Участвовал в проработке архитектуры, разрабатывал интерфейс и проводил тестирование.</p>
+                </div>
+            </div>
         </section>
     </main>
 
